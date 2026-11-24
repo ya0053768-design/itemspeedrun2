@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "itemspeedrun",
+	"version": "${version}",
+	"name": "Item Speedrun",
+	"description": "Спидран случайного предмета: колесо предметов перед созданием мира, усложнения, секундомер с иконкой, статистика и сид в чате.",
+	"authors": [],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.itemspeedrun.ItemSpeedrunMod"
+		],
+		"client": [
+			"ru.itemspeedrun.client.ItemSpeedrunClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "itemspeedrun.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
